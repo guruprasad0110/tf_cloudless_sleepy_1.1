@@ -21,7 +21,7 @@ resource "null_resource" "current_user" {
 
   provisioner "local-exec" {
     command = <<EOF
-      ibmcloud account user-preference --output JSON > user.json
+      ibmcloud account user-preference --output JSON
     EOF
   }
 }
