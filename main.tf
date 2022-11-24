@@ -12,6 +12,19 @@ data "template_file" "test" {
   workspace_id = "my-workspace-id"
 }
 */
+  
+resource "null_resource" "current_user" {
+
+  triggers = {
+    "get_user" = timestamp()
+  }
+
+  provisioner "local-exec" {
+    command = <<EOF
+      ibmcloud account user-preference --output JSON > user.json
+    EOF
+  }
+}
 
 resource "null_resource" "sleep" {
   triggers = {
