@@ -13,6 +13,7 @@ data "template_file" "test" {
 }
 */
   
+/*
 resource "null_resource" "current_user" {
 
   triggers = {
@@ -25,6 +26,7 @@ resource "null_resource" "current_user" {
     EOF
   }
 }
+*/
 
 resource "null_resource" "sleep" {
   triggers = {
