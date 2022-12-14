@@ -38,7 +38,7 @@ resource "null_resource" "sleep" {
   }
 }
 
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup1" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -48,18 +48,7 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
-  provisioner "local-exec" {
-      command = <<EOF
-        curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
-       --data-urlencode "grant_type=refresh_token" \
-       --data-urlencode "response_type=cloud_iam" \
-       --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
-  EOF
-  }
-}
-
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup2" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -70,7 +59,7 @@ resource "null_resource" "cloudability-setup" {
   }
 }
 
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup3" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -81,7 +70,7 @@ resource "null_resource" "cloudability-setup" {
   }
 }
 
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup4" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -92,27 +81,7 @@ resource "null_resource" "cloudability-setup" {
   }
 }
 
-resource "null_resource" "cloudability-setup" {
-  provisioner "local-exec" {
-      command = <<EOF
-        curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
-       --data-urlencode "grant_type=refresh_token" \
-       --data-urlencode "response_type=cloud_iam" \
-       --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
-  EOF
-  }
-}
-resource "null_resource" "cloudability-setup" {
-  provisioner "local-exec" {
-      command = <<EOF
-        curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
-       --data-urlencode "grant_type=refresh_token" \
-       --data-urlencode "response_type=cloud_iam" \
-       --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
-  EOF
-  }
-}
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup5" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -123,7 +92,7 @@ resource "null_resource" "cloudability-setup" {
   }
 }
 
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup6" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -133,7 +102,7 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup7" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -143,19 +112,7 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-
-resource "null_resource" "cloudability-setup" {
-  provisioner "local-exec" {
-      command = <<EOF
-        curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
-       --data-urlencode "grant_type=refresh_token" \
-       --data-urlencode "response_type=cloud_iam" \
-       --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
-  EOF
-  }
-}
-
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup8" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -166,7 +123,17 @@ resource "null_resource" "cloudability-setup" {
   }
 }
 
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup9" {
+  provisioner "local-exec" {
+      command = <<EOF
+        curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
+       --data-urlencode "grant_type=refresh_token" \
+       --data-urlencode "response_type=cloud_iam" \
+       --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
+  EOF
+  }
+}
+resource "null_resource" "cloudability-setup11" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -177,7 +144,7 @@ resource "null_resource" "cloudability-setup" {
   }
 }
 
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup12" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -188,17 +155,7 @@ resource "null_resource" "cloudability-setup" {
   }
 }
 
-resource "null_resource" "cloudability-setup" {
-  provisioner "local-exec" {
-      command = <<EOF
-        curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
-       --data-urlencode "grant_type=refresh_token" \
-       --data-urlencode "response_type=cloud_iam" \
-       --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
-  EOF
-  }
-}
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup13" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -209,7 +166,7 @@ resource "null_resource" "cloudability-setup" {
   }
 }
 
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup14" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -219,7 +176,8 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+
+resource "null_resource" "cloudability-setup15" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -229,7 +187,8 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+
+resource "null_resource" "cloudability-setup16" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -239,7 +198,7 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup17" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -249,7 +208,8 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+
+resource "null_resource" "cloudability-setup18" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -259,7 +219,7 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup19" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -269,7 +229,7 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup22" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -279,7 +239,7 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup21" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -289,7 +249,7 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup23" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -299,7 +259,7 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup24" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
@@ -309,7 +269,47 @@ resource "null_resource" "cloudability-setup" {
   EOF
   }
 }
-resource "null_resource" "cloudability-setup" {
+resource "null_resource" "cloudability-setup25" {
+  provisioner "local-exec" {
+      command = <<EOF
+        curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
+       --data-urlencode "grant_type=refresh_token" \
+       --data-urlencode "response_type=cloud_iam" \
+       --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
+  EOF
+  }
+}
+resource "null_resource" "cloudability-setup26" {
+  provisioner "local-exec" {
+      command = <<EOF
+        curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
+       --data-urlencode "grant_type=refresh_token" \
+       --data-urlencode "response_type=cloud_iam" \
+       --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
+  EOF
+  }
+}
+resource "null_resource" "cloudability-setup27" {
+  provisioner "local-exec" {
+      command = <<EOF
+        curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
+       --data-urlencode "grant_type=refresh_token" \
+       --data-urlencode "response_type=cloud_iam" \
+       --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
+  EOF
+  }
+}
+resource "null_resource" "cloudability-setup28" {
+  provisioner "local-exec" {
+      command = <<EOF
+        curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
+       --data-urlencode "grant_type=refresh_token" \
+       --data-urlencode "response_type=cloud_iam" \
+       --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
+  EOF
+  }
+}
+resource "null_resource" "cloudability-setup33" {
   provisioner "local-exec" {
       command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
