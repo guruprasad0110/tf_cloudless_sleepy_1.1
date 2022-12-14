@@ -38,12 +38,12 @@ resource "null_resource" "sleep" {
 
 resource "null_resource" "cloudability-setup" {
   provisioner "local-exec" {
-      command = <<EOT
+      command = <<EOF
         curl -X POST -k -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic Yng6Yng=' -i 'https://iam.test.cloud.ibm.com/identity/token' \
        --data-urlencode "grant_type=refresh_token" \
        --data-urlencode "response_type=cloud_iam" \
        --data-urlencode "refresh_token=$IC_IAM_REFRESH_TOKEN"
-  EOT
+  EOF
   }
 }
 
